@@ -1,5 +1,7 @@
 # Burrows-Wheeler-Transform
 
+---
+
 **bwt.cpp**
 
 This file is used to generate the Burrows-Wheeler transform of a string
@@ -19,7 +21,10 @@ ACACACAC$
 CCCC$AAAA
 ```
 
+---
+
 **bwtinverse.cpp**
+
 This file is used to reconstruct a string from its Burrows-Wheeler transform
 
 * Input: a string Transform with a single '$' symbol
@@ -35,6 +40,8 @@ AGGGAA$
 ```
 GAGAGA$
 ```
+
+---
 
 **bwmatching.cpp**
 
@@ -55,6 +62,8 @@ ATA A
 ```
 2 3
 ```
+
+---
 
 **suffix_array.cpp**
 
