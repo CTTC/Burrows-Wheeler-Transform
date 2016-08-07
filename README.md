@@ -8,7 +8,7 @@ This file is used to generate the Burrows-Wheeler transform of a string
 * Output: BWT(text)
 
 
-### Example:
+<em>**Example**</em:
 
 #### Input:
 ``` 
