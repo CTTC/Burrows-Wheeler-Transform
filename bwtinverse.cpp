@@ -11,7 +11,8 @@ using std::string;
 using std::vector;
 using std::sort;
 using std::map;
-
+using std::pair;
+using std::reverse;
 
 void countSymbols(const string& text, map<char, int>& cumCount, vector<int>& occTimes, int& DSymbolPos) {
 	int Acount = 0;
@@ -57,9 +58,10 @@ string InverseBWT(const string& bwt) {
 
 	for (int i = 0; i < bwt.size(); i++)
 	{
-		text = bwt[lastColIdx] + text;
+		text += bwt[lastColIdx];
 		lastColIdx = cumCount[bwt[lastColIdx]] + occTimes[lastColIdx];
 	}
+	reverse(text.begin(), text.end());
 	return text;
 }
 
