@@ -1,4 +1,4 @@
-# Burrows-Wheeler-Transform
+# Burrows-Wheeler-Transform-and-Suffix-Array
 
 ---
 
@@ -102,3 +102,27 @@ GAGAGAGA$
 ```
 8 7 5 3 1 6 4 2 0
 ```
+
+---
+
+**suffix_array_matching.cpp**
+
+Find the matching patterns in a string using suffix array.
+
+* Input: The first line constains a string Text. The second line specifies an integer n. The last line gives a collection of n strings Patterns = {p1, ..., pn} seperated by spaces.
+* Output: All starting positions (in any order) in Text where a pattern appears as a substring (using
+0-based indexing as usual).
+
+<em>**Example**</em>:
+
+#### Input:
+``` 
+ATATATA
+3
+ATA C TATAT
+```
+#### Output:
+```
+4 2 0 1
+```
+
