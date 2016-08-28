@@ -82,3 +82,23 @@ AACGATAGCGGTAGA$
 ```
 15 14 0 1 12 6 4 2 8 13 3 7 9 10 11 5
 ```
+
+---
+
+**suffix_array_long.cpp**
+
+This file a more efficient version (O(nlogn)) way to construct suffix array, especially useful for long strings.
+
+* Input: a string Text ending with a '$' symbol.
+* Output: suffixArray(Text)
+
+<em>**Example**</em>:
+
+#### Input:
+``` 
+GAGAGAGA$
+```
+#### Output:
+```
+8 7 5 3 1 6 4 2 0
+```
